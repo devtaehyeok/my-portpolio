@@ -31,10 +31,10 @@ export function Skills() {
               <div className="skill">
                 <div className="skill__description">
                   <span>mongoDB</span>
-                  <span>75%</span>
+                  <span>90%</span>
                 </div>
                 <div className="skill__bar">
-                  <div className="skill__value" style={{ width: "75%" }}></div>
+                  <div className="skill__value" style={{ width: "90%" }}></div>
                 </div>
               </div>
               <div className="skill">

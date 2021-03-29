@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import logo from "../imgs/logo.png";
 import "./Navbar.css";
-
+import { BsList } from "react-icons/bs";
 function scrollIntoView(selector: string) {
   const scrollTo = document.querySelector(selector);
   scrollTo?.scrollIntoView({ behavior: "smooth" });
@@ -26,7 +26,7 @@ export function Navbar() {
       const navbarMenu = document.querySelector(".navbar__menu");
       navbarMenu?.addEventListener("click", (event) => {
         const target = event.target;
-        if (!(target instanceof HTMLButtonElement)) {
+        if (!(target instanceof HTMLElement)) {
           return;
         }
         const link = target?.dataset.link || null;
@@ -63,11 +63,8 @@ export function Navbar() {
           <li className="navbar__menu__item" data-link="#skills">
             Skills
           </li>
-          <li className="navbar__menu__item" data-link="#work">
-            My work
-          </li>
-          <li className="navbar__menu__item" data-link="#testimonials">
-            Testimonial
+          <li className="navbar__menu__item" data-link="#projects">
+            My projects
           </li>
           <li className="navbar__menu__item" data-link="#contact">
             Contact
@@ -75,7 +72,7 @@ export function Navbar() {
         </ul>
         {/* <!-- Toggle button --> */}
         <button className="navbar__toggle-btn">
-          <i className="fas fa-bars"></i>
+          <BsList />
         </button>
       </nav>
     </>
