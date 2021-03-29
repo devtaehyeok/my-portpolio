@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { AiFillGithub, AiFillHome, AiFillLinkedin } from "react-icons/ai";
+import "./Contact.css";
 function scrollIntoView(selector: string) {
   const scrollTo = document.querySelector(selector);
   scrollTo?.scrollIntoView({ behavior: "smooth" });

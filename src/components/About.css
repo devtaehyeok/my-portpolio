@@ -46,12 +46,7 @@
 
 .job {
   display: flex;
-  align-items: center;
-}
-
-.about__jobs--header {
-  text-align: left;
-  margin-bottom: 1rem;
+  justify-content: center;
 }
 
 .job__logo {

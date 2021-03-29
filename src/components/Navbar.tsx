@@ -17,9 +17,9 @@ export function Navbar() {
       if (!navbarHeight) return;
       if (window.scrollY > navbarHeight) {
         if (!navbar) return;
-        navbar?.classList.add("navbar--dark");
+        navbar?.classList.add("navbar--transparent");
       } else {
-        navbar?.classList.remove("navbar--dark");
+        navbar?.classList.remove("navbar--transparent");
       }
 
       // Handle scrolling when tapping on the navbar menu
