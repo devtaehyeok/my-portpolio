@@ -40,19 +40,19 @@ export function Projects() {
         projectContainer?.classList.remove("anim-out");
       }, 300);
     });
-  });
+  }, []);
   return (
     <>
       <section id="projects" className="section">
         <div className="section__container">
-          <h1>My work</h1>
+          <h1>My projects</h1>
           <h3>1년 반 동안 경험한 다양한 프로젝트들...</h3>
           <div className="work__categories">
             <button className="category__btn selected" data-filter="*">
-              All <span className="category__count">2</span>
+              All <span className="category__count">4</span>
             </button>
             <button className="category__btn" data-filter="Solution">
-              Solution <span className="category__count">1</span>
+              Solution <span className="category__count">3</span>
             </button>
             <button className="category__btn" data-filter="System Management">
               System Management <span className="category__count">1</span>

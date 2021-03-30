@@ -45,9 +45,9 @@ export function Home() {
               {" "}
               LG CNS
             </a>
-            <h2 className="home__description">
+            <div className="home__description">
               I am a dreamer who imagines changing the world with software.
-            </h2>
+            </div>
           </h2>
 
           <button
